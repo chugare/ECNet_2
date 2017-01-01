@@ -12,6 +12,7 @@ import java.util.List;
 
 /**
  * Created by simengzhao on 16/12/10.
+ * 文件管理模块，主要的功能是实现从文件读取 生成model
  */
 public class FileManager {
     public static Model readModelFromFile(File file){

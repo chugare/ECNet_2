@@ -11,13 +11,16 @@ import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.util.HashMap;
 import java.util.HashSet;
-
+/*
+ *model 的作用就是将画板上的元素抽象化，形成方便进行转换的静态模型
+ *
+ */
 public class Model {
-	HashSet<Body> bodys;
-	HashSet<Head> heads;
-	HashSet<LinkNode> linkNodes;
-	HashSet<Relation> relations;
-	HashMap<Integer,Element> eleMap;
+	private HashSet<Body> bodys;
+	private HashSet<Head> heads;
+	private HashSet<LinkNode> linkNodes;
+	private HashSet<Relation> relations;
+	private HashMap<Integer,Element> eleMap;
 	int ids;
 	int count;
 	String name ;
