@@ -85,7 +85,11 @@ public class DrawPlace extends AnchorPane implements Cloneable {
         this.focus = focus;
         System.out.print("number:"+callbackList.size());
         Callbackable fun = callbackList.get("UIB");
-
+        for(Node node :getChildren())
+        {
+            ((Modifyable)node).resetFocus();
+        }
+        ((Modifyable)focus).setFocus();
         if(fun!=null)
             fun.doCallBackFunction();
     }

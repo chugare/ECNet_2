@@ -32,7 +32,15 @@ public class ELinkNode_P extends Rectangle implements IdAvaiable,Modifyable{
     public double getRadius() {
         return -1;
     }
+    @Override
+    public void setFocus() {
+        setFill(Color.color(0.9,0.9,1,0.8));
+    }
 
+    @Override
+    public void resetFocus() {
+        setFill(Color.WHITE);
+    }
     ELinkNode_P me = this;
     public ELinkNode_P(double x,double y,double width,double height)
     {

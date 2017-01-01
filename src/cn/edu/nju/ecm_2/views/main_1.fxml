@@ -51,7 +51,7 @@
           </Menu>
         </menus>
       </MenuBar>
-      <ToolBar GridPane.rowIndex="1">
+      <ToolBar prefHeight="61.0" prefWidth="685.0" GridPane.rowIndex="1">
         <items>
             <Button fx:id="body" mnemonicParsing="false" onAction="#bodyClick" prefHeight="0.0" prefWidth="65.0" text="链  体" />
             <Button fx:id="head" mnemonicParsing="false" onAction="#headClick" prefHeight="0.0" prefWidth="65.0" text="链  头" />

@@ -18,4 +18,6 @@ public interface Modifyable {
     double getHeight();
     void setRadius(double radius);
     double getRadius();
+    void setFocus();
+    void resetFocus();
 }

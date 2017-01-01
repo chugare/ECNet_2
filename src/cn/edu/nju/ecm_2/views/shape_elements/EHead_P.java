@@ -63,6 +63,15 @@ public class EHead_P extends Circle implements IdAvaiable,Modifyable{
         this.mid = mid;
     }
 
+    @Override
+    public void setFocus() {
+        setFill(Color.color(0.9,0.9,1,0.8));
+    }
+
+    @Override
+    public void resetFocus() {
+        setFill(Color.WHITE);
+    }
     public double getDx() {
         return dx;
     }

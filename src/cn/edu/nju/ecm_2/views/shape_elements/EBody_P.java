@@ -102,6 +102,16 @@ public class EBody_P extends Group implements IdAvaiable,Modifyable{
     }
 
     @Override
+    public void setFocus() {
+        rec_body.setFill(Color.color(0.9,0.9,1,0.8));
+    }
+
+    @Override
+    public void resetFocus() {
+        rec_body.setFill(Color.WHITE);
+    }
+
+    @Override
     public void setRadius(double radius) {
 
     }

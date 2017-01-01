@@ -8,6 +8,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Color;
+import javafx.scene.paint.Paint;
 import javafx.scene.shape.Circle;
 import javafx.scene.shape.Line;
 import javafx.scene.shape.Polygon;
@@ -16,7 +17,7 @@ import javafx.scene.shape.Rectangle;
 /**
  * Created by chugare on 2016/11/19.
  */
-public class BHLine extends Group {
+public class BHLine extends Group implements Modifyable{
     private Circle checkpoint1,checkpoint2;
     private Line link;
     private Polygon arrow;
@@ -25,6 +26,77 @@ public class BHLine extends Group {
     Node startE;
     Node endE;
     private BHLine me;
+
+    //接口函数
+
+
+    @Override
+    public void setX(double x) {
+
+    }
+
+    @Override
+    public double getX() {
+        return 0;
+    }
+
+    @Override
+    public void setY(double y) {
+
+    }
+
+    @Override
+    public double getY() {
+        return 0;
+    }
+
+    @Override
+    public void setStroke(Paint paint) {
+
+    }
+
+    @Override
+    public void setWidth(double width) {
+
+    }
+
+    @Override
+    public void setHeight(double height) {
+
+    }
+
+    @Override
+    public double getWidth() {
+        return 0;
+    }
+
+    @Override
+    public double getHeight() {
+        return 0;
+    }
+
+    @Override
+    public void setRadius(double radius) {
+
+    }
+
+    @Override
+    public double getRadius() {
+        return 0;
+    }
+
+    @Override
+    public void setFocus() {
+        link.setFill(Color.color(0.9,0.9,1,0.8));
+    }
+//有用的两个函数
+    @Override
+    public void resetFocus() {
+
+    }
+//
+
+
 
     public Node getStartE() {
         return  startE;
